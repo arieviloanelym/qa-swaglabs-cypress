@@ -1,0 +1,19 @@
+{
+  "name": "qa-swaglabs-cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "smoke:fast": "cypress run --spec cypress/e2e/smoke.cy.js",
+    "smoke:headed": "cypress run --spec cypress/e2e/smoke.cy.js --browser chrome --headed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "cypress": "^14.5.4"
+  }
+}
