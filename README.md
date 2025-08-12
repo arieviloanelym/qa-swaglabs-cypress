@@ -87,12 +87,9 @@ MIT
 
 ---
 
-✍ **Autor:** arieviloanelym
+✍ **Autor:** Mylena Oliveira
 💼 **LinkedIn:** [https://www.linkedin.com/in/SEU-PERFIL](https://www.linkedin.com/in/SEU-PERFIL)
 📅 **Atualizado:** ago/2025
 EOF
 
 ````
-
-
-Pronto! Quer que eu também adicione o **workflow do GitHub Actions** para rodar o smoke em cada push? Posso te mandar o arquivo `.github/workflows/cypress.yml` prontinho.
