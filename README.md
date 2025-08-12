@@ -1,3 +1,4 @@
+
 # 🧪 QA Swag Labs - Cypress
 
 ![Cypress](https://img.shields.io/badge/Cypress-Testing-brightgreen?logo=cypress)
@@ -25,44 +26,73 @@ O objetivo é validar rapidamente o **fluxo crítico** (Smoke Test) da aplicaç�
 ---
 
 ## 📂 Estrutura do Projeto
+```
 
 qa-swaglabs-cypress
 │-- cypress/
-│ ├── e2e/ # Testes automatizados
-│ ├── fixtures/ # Massa de dados (opcional)
-│ └── support/ # Comandos/configs adicionais
+│   ├── e2e/          # Testes automatizados
+│   ├── fixtures/     # Massa de dados (opcional)
+│   └── support/      # Comandos/configs adicionais
 │-- cypress.config.js # Configuração do Cypress
-│-- package.json # Dependências e scripts
-│-- README.md # Documentação
-│-- .gitignore # Arquivos ignorados
+│-- package.json      # Dependências e scripts
+│-- README.md         # Documentação
+│-- .gitignore        # Arquivos ignorados
+
+````
+
+---
 
 ## 🚀 Como Executar
 
 ### 1) Instalar dependências
-
+```bash
 npm install
+````
 
+### 2) Rodar com interface (dev/debug)
+
+```bash
 npx cypress open
+```
 
+### 3) Rodar headless (grava vídeo e fecha sozinho)
+
+```bash
 npx cypress run --spec cypress/e2e/smoke.cy.js
+```
 
-Evidências ficam em: cypress/videos/ e, em falhas, cypress/screenshots/.
+> Evidências ficam em: `cypress/videos/` e, em falhas, `cypress/screenshots/`.
 
-⚙️ Configurações úteis
-cypress.config.js já ajustado para execução rápida (timeouts menores) e bloqueio de telemetria do site.
+---
 
-Scripts sugeridos no package.json:
+## ⚙️ Configurações úteis
 
+* `cypress.config.js` já ajustado para execução rápida (timeouts menores) e bloqueio de telemetria do site.
+* Scripts sugeridos no `package.json`:
+
+```json
 {
   "scripts": {
     "smoke:fast": "cypress run --spec cypress/e2e/smoke.cy.js",
     "cy:open": "cypress open"
   }
 }
+```
 
-📄 Licença
+---
+
+## 📄 Licença
+
 MIT
 
-✍ Autor: Mylena Oliveira
-💼 LinkedIn: www.linkedin.com/in/mylenacao
-📅 Atualizado: ago/2025
+---
+
+✍ **Autor:** arieviloanelym
+💼 **LinkedIn:** [https://www.linkedin.com/in/SEU-PERFIL](https://www.linkedin.com/in/SEU-PERFIL)
+📅 **Atualizado:** ago/2025
+EOF
+
+````
+
+
+Pronto! Quer que eu também adicione o **workflow do GitHub Actions** para rodar o smoke em cada push? Posso te mandar o arquivo `.github/workflows/cypress.yml` prontinho.
